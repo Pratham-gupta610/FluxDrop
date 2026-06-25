@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "ebpf",
+    "userspace",
+    "common",
+    "dashboard"
+]
+resolver = "2"
