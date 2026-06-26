@@ -1,6 +1,13 @@
 [package]
-name = "ebpf"
+name = "fluxdrop-ebpf"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
+
+[[bin]]
+name = "fluxdrop-ebpf"
+path = "src/main.rs"
 
 [dependencies]
+aya-ebpf = { workspace = true }
+aya-log-ebpf = { workspace = true }
+fluxdrop-common = { path = "../common" }

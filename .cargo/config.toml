@@ -1,0 +1,3 @@
+# Workspace root Cargo config.
+# Do not set BPF target or build-std here.
+# Userspace, dashboard, and common must build for normal Linux.

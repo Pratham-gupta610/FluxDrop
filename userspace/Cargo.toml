@@ -1,6 +1,21 @@
+
+
 [package]
-name = "userspace"
+name = "fluxdrop-userspace"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
+
+[[bin]]
+name = "fluxdrop"
+path = "src/main.rs"
 
 [dependencies]
+
+
+aya = { workspace = true }
+aya-log = { workspace = true }
+tokio = { workspace = true }
+log = { workspace = true }
+env_logger = { workspace = true }
+anyhow = { workspace = true }
+fluxdrop-common = { path = "../common" }
